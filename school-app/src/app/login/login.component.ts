@@ -8,13 +8,17 @@ import { Component } from '@angular/core';
 export class LoginComponent {
    // message = "Hello Divya Welcome to LEARN TO AIM HIGH application";
    
-  fontColor = 'blue';
-  sayHelloId = 1;
-  canClick = false;
-  message = 'Hello, World';
-
-  sayMessage() {
-    alert(this.message);
-  }
+   username : string ="";
+   password : string ="";
+   show: boolean= false;
+   submit(){
+   console.log("user name is " + this.username)
+   this.clear();
+   }
+   clear(){
+   this.username ="";
+   this.password = "";
+   this.show = true;
+   }
 
 }

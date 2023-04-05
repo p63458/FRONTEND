@@ -1,0 +1,10 @@
+.center {
+    text-align: center;}
+    .b{
+        position: absolute;
+        left: 500px;
+        width: 200px;
+        height: 120px;
+        bottom: 400px;
+        
+    }
