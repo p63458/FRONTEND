@@ -1,10 +1,16 @@
-.center {
-    text-align: center;}
-    .b{
-        position: absolute;
-        left: 500px;
-        width: 200px;
-        height: 120px;
-        bottom: 400px;
-        
-    }
+.login-form {
+  position: absolute;
+  left: 500px;
+  width: 200px;
+  height: 120px;
+  bottom: 400px;
+}
+.form-control{
+    width: 150%;
+}
+.header {
+  position: absolute;
+    width: 500px;
+    height: 120px;
+    left: 500px;
+} 
