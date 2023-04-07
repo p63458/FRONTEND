@@ -15,10 +15,10 @@ export class LoginComponent implements OnInit {
   emailId: any;
   password: any;
   userForm: any;
-  //interpolation --> here we have text in title which is diplayed in the html file that is sharing data from ts --> html
+  //{point 2}interpolation --> here we have text in title which is diplayed in the html file that is sharing data from ts --> html
   title: any = 'Welcome to School App';
  
-  // this is to capture all the data from the html to ts
+  // {point 3}this is to capture all the data from the html to ts
   studentLogin = new FormGroup({
     emailId: new FormControl(''),
     password: new FormControl(''),
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     console.log(this.studentLogin.value, '-- consists of entire form data');
   }
 
-  //change in the text box the data is captured here from html to ts
+  //{point 1} change in the text box the data is captured here from html to ts
   check(value: any) {
     this.emailId = value.target.value;
     console.log(

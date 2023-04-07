@@ -1,7 +1,7 @@
-<h1 class="header">{{title}}</h1>
+<h1 class="header">{{title}}</h1><!-- {point 2}interpolation -->
 <div class="login-form">
   
-  <form [formGroup]="studentLogin" (ngSubmit)="saveData()">
+  <form [formGroup]="studentLogin" (ngSubmit)="saveData()"><!-- {point 3}save the data on the form submition -->
    
     <div class="form-group">
       <label for="email-label">Email address</label>
@@ -11,6 +11,8 @@
         id="emailId" name = "emailId"
         placeholder="Enter email" formControlName =  "emailId" [(ngModel)]="emailId" (change)="check($event)"
       />
+      <!-- {point 1} [(ngModel)]="emailId" (change)="check($event)  ->will help to pass the value from the html to ts whenever there is a change 
+      in the textbox -->
     </div>
     <div class="form-group">
       <label for="password-label">Password</label>
