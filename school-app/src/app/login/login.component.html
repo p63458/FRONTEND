@@ -9,7 +9,7 @@
         type="email"
         class="form-control"
         id="emailId" name = "emailId"
-        placeholder="Enter email" formControlName =  "emailId"
+        placeholder="Enter email" formControlName =  "emailId" [(ngModel)]="emailId" (change)="check($event)"
       />
     </div>
     <div class="form-group">
